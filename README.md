@@ -1,1 +1,1 @@
-# FrontEnd-ZDFRONpol10
+This repository was created to study and complete exercises from Software Development Academy course in FrontEnd Technology.
