@@ -1,0 +1,13 @@
+{
+  "name": "typescript",
+  "version": "1.0.0",
+  "description": "Simple TS project",
+  "main": "index.js",
+  "scripts": {
+    "compile": "tsc --watch",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": ["ts", "js", "todo"],
+  "author": "Przemysław Tusznio",
+  "license": "ISC"
+}
