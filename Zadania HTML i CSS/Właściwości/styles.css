@@ -1,0 +1,327 @@
+/* Zadanie 1 */
+.zadanie1 {
+    font-size: 100px;
+    color: blue;
+    font-weight: 5000;
+    font-style: italic;
+    text-decoration: underline;
+}
+
+/* Zadanie 2*/
+.zadanie2 {
+    color: black;
+    text-decoration: none;
+}
+
+/* Zadanie 3*/
+body {
+    font-family: 'Edu VIC WA NT Beginner', cursive;
+}
+
+/* Zadanie 4*/
+.zadanie41 {
+    font-weight: 5000;
+    font-size: 100px;
+}
+
+.zadanie42 {
+    font-style: italic;
+}
+
+.zadanie43 {
+    font-size: 10px;
+}
+
+/* Zadanie 5*/
+.zadanie51 {
+    text-decoration: underline;
+}
+
+.zadanie52 {
+    font-style: italic;
+}
+
+.zadanie53 {
+    font-weight: 1000;
+}
+
+.zadanie54 {
+    color: blue;
+}
+.zadanie55 {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Zadanie 6*/
+.zadanie6 {
+    text-align: center;
+}
+
+/* Zadanie 7*/
+.zadanie7 {
+    width: 100px;
+    height: 100px;
+    background-color: aqua;
+    border: 1px;
+    border-style: solid;
+    border-color: black;
+    border-radius: 10%;
+}
+/* html{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
+
+/* Zadanie 8*/
+.zadanie8 {
+    width: 100px;
+    height: 100px;
+    background-color: rgb(255, 0, 0);
+    border: 1px;
+    border-style: solid;
+    border-color: black;
+    border-radius: 10%;
+    margin: 10px 10px 10px 10px;
+}
+.zadanie8:hover {
+    background-color: aquamarine;
+}
+
+/* Zadanie 9 */
+.zadanie91 {
+    width: 25px;
+    height: 25px;
+    background-color: red;
+    border: 1px;
+    border-style: solid;
+    border-color: black;
+    border-radius: 10%;
+    margin: 10px 10px 10px 10px;
+}
+.zadanie92 {
+    width: 50px;
+    height: 50px;
+    background-color: green;
+    border: 1px;
+    border-style: solid;
+    border-color: black;
+    border-radius: 10%;
+    margin: 10px 10px 10px 10px;
+}.zadanie93 {
+    width: 75px;
+    height: 75px;
+    background-color: yellow;
+    border: 1px;
+    border-style: solid;
+    border-color: black;
+    border-radius: 10%;
+    margin: 10px 10px 10px 10px;
+}
+.zadanie94 {
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    border: 1px;
+    border-style: solid;
+    border-color: black;
+    border-radius: 10%;
+    margin: 10px 10px 10px 10px;
+}
+.zadanie95 {
+    width: 125px;
+    height: 125px;
+    background-color: black;
+    border: 1px;
+    border-style: solid;
+    border-color: black;
+    border-radius: 10%;
+    margin: 10px 10px 10px 10px;
+}
+
+/* Zadanie 10 */
+.zadanie103 {
+    display:flex;
+    flex-wrap: wrap;
+    width: 306px;
+    height: 306px;
+    border: 1px solid black;
+}
+.zadanie101 {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    border: 1px;
+    border-style: solid;
+    border-color: black;
+    border-radius: 10%;
+}
+.zadanie102 {
+    width: 100px;
+    height: 100px;
+    background-color: white;
+    border: 1px;
+    border-style: solid;
+    border-color: black;
+    border-radius: 10%;
+}
+/* Zadanie 11 */
+body {
+    border: 20px solid blue;
+}
+
+/* Zadanie 12 */
+body {
+    display: flex;
+    flex-direction: column;
+}
+.zadanie12 {
+    border: 1px solid black;
+    background-color: red;
+    justify-content: center;
+    align-items: flex-end;
+    text-align: center;
+}
+.zadanie121:hover {
+    background-color: blueviolet;
+}
+/* Zadanie 13 */
+.zadanie131 {
+    height: 100px;
+    width: 100px;
+    border: 1px solid black;
+    background-color: aqua;
+    overflow: hidden;
+}
+.zadanie132 {
+    height: 100px;
+    width: 100px;
+    border: 1px dashed red;
+    background-color: blueviolet;
+    overflow: scroll;
+}
+.zadanie133 {
+    height: 100px;
+    width: 100px;
+    border: 1px inherit yellow;
+    background-color: lightcoral;
+    overflow: auto;
+}
+
+/* Zadanie 14 */
+    /* Zadania 14 brak */
+
+/* Zadanie 15 */
+body {
+    background-color: darkorange;
+}
+
+/* Zadanie 16 */
+body {
+    background-image: url("data:image/jpeg;base64,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");
+}
+
+/* Zadanie 17 */
+    /* Zadanie z gwiazdką* - na później */
+
+/* Zadanie 18 */
+.zadanie181 {
+    width: auto;
+    height: 102px;
+    border: 1px solid black;
+    background-color: aqua;
+    display: flex;
+    flex-direction: row;
+}
+.zadanie182 {
+    width: 25%;
+    height: 100px;
+    border: 1px solid black;
+    border-radius: 10%;
+    background-color: brown;
+}
+.zadanie183 {
+    width: 25%;
+    height: 100px;
+    border: 1px solid black;
+    border-radius: 10%;
+    background-color: blue;
+}
+.zadanie184 {
+    width: 25%;
+    height: 100px;
+    border: 1px solid black;
+    border-radius: 10%;
+    background-color: green;
+}
+.zadanie185 {
+    width: 25%;
+    height: 100px;
+    border: 1px solid black;
+    border-radius: 10%;
+    background-color: yellow;
+}
+
+/* Zadanie 19 */
+    /* Zadanie z gwiazdką* - na później */
+
+/* Zadanie 20 */
+.zadanie20 {
+    width: 306px;
+    height: 306px;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.zadanie201 {
+    width: 100px;
+    height: 100px;
+    border: 1px solid black;
+    border-radius: 10%;
+    background-color: red;
+
+}
+.zadanie202 {
+    width: 100px;
+    height: 100px;
+    border: 1px solid black;
+    border-radius: 10%;
+    background-color: white;
+}
+/* Zadanie 21 */
+    /* Zadanie z gwiazdką* - na później */
+
+/* Zadanie 22 */
+    /* body > div {
+        background-color: red;
+    }
+    div[class="class"] {
+        background-color: blue;
+    }
+
+    -wszystkie div'y wewnątrz body otrzymają kolor tła czerwony, ale dlatego, że później użyliśmy oddzielną regułę dla konkretnego diva przegladarka wychwyci i nadpisze kolor tego danego diva na niebieski */
+
+/* Zadanie 23 */
+.zadanie231 {
+    width: 400px;
+    height: 400px;
+    border: 1px solid black;
+    border-radius: 10%;
+    background-color: rgba(255,0,0,0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.zadanie232 {
+    width: 100px;
+    height: 100px;
+    border: 1px solid black;
+    border-radius: 10%;
+    background-color: blueviolet;
+}
+
+/* Zadanie 24 */
+    /* Zadanie z gwiazdką* - na później */

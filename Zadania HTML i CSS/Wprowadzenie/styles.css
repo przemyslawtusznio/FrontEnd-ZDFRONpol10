@@ -1,0 +1,76 @@
+/* Zadanie 1 */
+.klasa {
+
+}
+/* przy użyciu kropki odnosimy się do wartości atrybutu class */
+
+
+
+/* Zadanie 2 */
+#mojeID {
+
+}
+
+div[id="mojeID"] {
+
+}
+/* przy użyciu hashtaga odnosimy się do wartości atrybutu ID */
+/* możemy wykożystać podstawowy zapis: znajdujemy każdego div'a o atrybucie id i wartości mojeID i dalej przypisujemy jemu właściowści */
+
+
+
+/* Zadanie 3 */
+div[name="mojname"] {
+
+}
+/* do atrybutu name nie mamy żadnego sktótu, którego możemy wykożystać więc musimy skożystać ze znalezienia każdego div'a o atrybucie name i wartości mojname */
+
+
+
+/* Zadanie 4 */
+.mojaKlasa {
+
+}
+
+div[id="drugieId"] > div[class="mojaKlasa"] {
+
+}
+/* ogólny selektor wykożystujący skrót kropki (od class) oraz szczegółowy selektor mówiący żeby znaleść takiego div'a o atrybucie i wartości, który znajduje się w innym div'ie o atrybucie i wartości */
+
+
+
+/* Zadanie 5 */
+button:hover {
+    background-color: blue;
+    cursor:pointer;
+}
+/* do elementu button bezpośrednio po dwukropku dodaliśmy pseudoklasę hover, dzięki której uruchamiamy dane właściości po najechaniu kursorem na dany element; dodatkowo użyliśmy zmiany kursora na pointer, który również się zmieni po najechaniu na ten element */
+
+
+
+/* Zadanie 6 */
+.mojInput:focus {
+    color: red;
+}
+/* znowu używamy pseudoklasy tym razem focus, która daje możliwość wykożystania stylu w momencie naciśnięcia na dany element - po naciśnięciu na cokolwiek innego regułą przestaje działać */
+
+
+
+/* Zadanie 7 */
+.h1 {
+    color: red;
+}
+
+div[class="h1"] > div[name="h2"] > div {
+    color: red;
+}
+/* najbardziej ogólnie: wszystkie div'y z tekstem leżą w div'ie o clasie h1 więc dodanie reguł do klasy h1 pomaluje tekst wszystkich podrzędnych elementów */
+/* najbardziej szczególowy zapis zawiera, że div znajduje się w divie (...), który leży w div'ie (...) */
+
+
+
+/* Zadanie 8 */
+div > div > div > div {
+    color: blueviolet;
+}
+/* "Tekst DIVA 3" znajduje się w najgłębszym zagnieżdżeniu divów z tekstem, dlatego taka formuła i przypisanie innego koloru zmieni tylko właściowści "Tekst DIVA 3" */
