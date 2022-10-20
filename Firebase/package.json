@@ -1,0 +1,21 @@
+{
+  "name": "zdfornpol10-todo",
+  "version": "1.0.0",
+  "description": "Simple todo app built eith Firebase and vanilla JS.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "todoapp",
+    "firebase",
+    "vanilla",
+    "js",
+    "js"
+  ],
+  "author": "Przemysław Tusznio",
+  "license": "ISC",
+  "dependencies": {
+    "firebase": "^9.10.0"
+  }
+}
