@@ -1,4 +1,4 @@
-import {useState} from 'react'
+import {useEffect, useState, useContext } from 'react'
 import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
 import Toolbar from '@mui/material/Toolbar';
@@ -9,13 +9,28 @@ import MenuIcon from '@mui/icons-material/Menu';
 import Container from '@mui/material/Container';
 import Avatar from '@mui/material/Avatar';
 import Button from '@mui/material/Button';
-import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
 import { Link } from 'react-router-dom'
 import { NavbarProps } from '../../Helpers/interfaces';
+import { ref, getDownloadURL } from "firebase/storage";
+import { auth, storage } from '../../Helpers/firebaseConfig';
+import { authContext } from '../../Helpers/authContext';
+
 
 const pages = ['Home', 'Search'];
-const Navbar: React.FC<NavbarProps> = ({loggedIn}) => {
+
+// 1. Stwórz stan profilePhoto, otypuj go tak żeby mógł przechowywać string albo undefined, wartość początkowa '/'
+// 2. Wywołaj useEffect, będzie działać tylko na pierwszym renderze
+// W UE:
+// 3. Stwórz referencje do storage (taka sama jak w poprzednim zadaniu)
+// 4. Wywołaj funkcję getDownloadURL, funkcja przyjmuje jako argument referenecje z poprzedniego punktu i importuje się ją z firebase/storage
+// 5. Na getDownloadURL popednij thena, w tym thene wywołaj funkcję aktualizującą stan profilePhoto (pkt 1) i wrzuć do tego stanu to, co zostało ci zwrócone przez getDownloadURL
+// 6. Dopisz catcha, console.error(err.message)
+// 7. W Avatarze (u mnie linia 120), ustaw atrybut src na stan profilePhoto
+
+const Navbar = () => {
+  const loggedIn = useContext(authContext);
+    const [profilePhoto, setProfilePhoto] = useState<string | undefined >('/');
     const [anchorElNav, setAnchorElNav] = useState<null | HTMLElement>(null);
     const [anchorElUser, setAnchorElUser] = useState<null | HTMLElement>(null);
   
@@ -29,6 +44,13 @@ const Navbar: React.FC<NavbarProps> = ({loggedIn}) => {
     const handleCloseNavMenu = () => {
       setAnchorElNav(null);
     };
+
+    useEffect(() => {
+      if (loggedIn && auth.currentUser) {
+        const storageRef = ref(storage, `/users/${auth.currentUser.uid}/profilePhoto`);
+        getDownloadURL(storageRef).then((url) => setProfilePhoto(url)).catch((err) => setProfilePhoto(undefined));
+      }
+    }, [loggedIn]);
   
     // const handleCloseUserMenu = () => {
     //   setAnchorElUser(null);
@@ -103,7 +125,7 @@ const Navbar: React.FC<NavbarProps> = ({loggedIn}) => {
               {/* Jeżeli loggedIn jest równe true wyświetl IconButton z Avatarem, jeżeli loggedIn jest równe false, wyświetl Button (z MUI, w sx'ach: my: 2, color white, display block) textContent Log in */}
               {
                 loggedIn ? (<IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>
-                  <Avatar alt="Remy Sharp" src="/static/images/avatar/2.jpg" />
+                  <Avatar alt="Remy Sharp" src={profilePhoto} />
                 </IconButton>) : <Button sx={{my: 2, color:"white", display:"block"}}>Log in</Button>
               }
               </Link>

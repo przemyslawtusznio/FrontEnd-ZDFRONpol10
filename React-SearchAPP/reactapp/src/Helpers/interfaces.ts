@@ -21,5 +21,20 @@ export interface LoginFormData {
 }
 
 export interface NavbarProps {
-    loggedIn: boolean,
+    loggedIn: boolean;
+}
+
+export interface UserPageProps {
+    loggedIn: boolean;
+}
+
+export interface ProfilePhotoFormData {
+    profilePhoto: FileList;
+}
+
+export interface SearchFormData {
+    keyword: string;
+}
+export interface SearchFormProps {
+    setKeyword: (value: string) => void;
 }
